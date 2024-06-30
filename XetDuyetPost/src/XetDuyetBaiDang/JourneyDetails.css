@@ -1,0 +1,56 @@
+.journey-details {
+    padding: 5px;
+  }
+  
+  .money-icon {
+    margin-right: 10px;
+    color: #007bff; /* Blue color, you can adjust to your preference */
+  }
+  
+  .location-icon {
+    margin-right: 10px;
+    color: #28a745; /* Green color, you can adjust to your preference */
+  }
+  .location-icon-stop {
+    margin-right: 10px;
+    color: #a72828; /* Green color, you can adjust to your preference */
+  }
+  
+  .card-header {
+    background-color: #f8f9fa; /* Light gray background color */
+  }
+  
+  .chi-phi {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .list-group-item {
+    background-color: #f8f9fa; /* Light gray background color */
+    border: none;
+  }
+  
+  .list-group-item i {
+    font-size: 20px;
+  }
+  
+  ul.list-inline {
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  ul.list-inline li {
+    display: inline-block;
+  }
+  
+  .badge.bg-secondary {
+    background-color: #6c757d; /* Gray color, you can adjust to your preference */
+  }
+  .tag-badge {
+  padding: 0.5em 1em;
+  font-size: 0.75em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff; /* Màu xanh dương cho thẻ tag */
+  border-radius: 0.5em;
+}

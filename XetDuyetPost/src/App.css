@@ -1,0 +1,89 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.card-body a:hover {
+  color: blue; /* Màu chữ khi di chuột qua liên kết */
+}
+
+.card-body a {
+  color: black; /* Màu chữ mặc định */
+  text-decoration: none; /* Loại bỏ gạch chân */
+  transition: color 0.3s; /* Hiệu ứng chuyển đổi màu trong 0.3s */
+}
+
+.footer-content {
+  text-align: center;
+}
+.money-icon {
+  color: green;
+  margin-right: 8px;
+}
+
+.chi-phi {
+  font-weight: bold;
+  color: #ff5722;
+}
+
+.gallery {
+  display: flex;
+  gap: 10px;
+  scroll-behavior: smooth; /* Thêm scroll-behavior để có hiệu ứng smooth */
+}
+
+.gallery a {
+  display: block;
+  max-width: 100%;
+}
+
+.gallery img {
+  width: 150px;
+  height: 150px;
+}
