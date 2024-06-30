@@ -1,0 +1,50 @@
+{% extends 'admin/base_site.html' %}
+{% block header %}
+  <h1 style="font-size:50px; color:green">ShareJourney</h1>
+{% endblock %}
+{% block content %}
+<h1>THỐNG KÊ THÔNG TIN CÁC RATING CỦA POST</h1>
+<ul>
+    {% for s in stats %}
+    <li><strong>{{ s.title }}: </strong> {{ s.avg_rating }}</li>
+    {% endfor %}
+</ul>
+
+<div style="width:50%;">
+     <canvas id="myChart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    let data = [];
+    let labels = [];
+    {% for s in stats %}
+        data.push({{ s.avg_rating }});
+        labels.push('{{s.title}}');
+    {% endfor %}
+    window.onload = function() {
+        const ctx = document.getElementById('myChart');
+
+      new Chart(ctx, {
+        type: 'bar',
+         data: data,
+        data: {
+          labels: labels,
+          datasets: [{
+            label: 'Trung bình rating',
+            data: data,
+            borderWidth: 1,
+            backgroundColor: ['green', 'red', 'blue', 'gold', 'brown']
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    }
+</script>
+{% endblock %}

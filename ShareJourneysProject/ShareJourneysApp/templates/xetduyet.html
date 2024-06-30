@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xét duyệt bài viết</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Lightbox CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            width: 100%;
+        }
+        .card-body a:hover {
+        color: blue; /* Màu chữ khi di chuột qua liên kết */
+         }
+        .card-body a {
+                color: black; /* Màu chữ mặc định */
+                text-decoration: none; /* Loại bỏ gạch chân */
+                transition: color 0.3s; /* Hiệu ứng chuyển đổi màu trong 0.3s */
+            }
+        .footer-content {
+            text-align: center;
+        }
+
+        .gallery {
+            display: flex;
+
+            gap: 10px;
+            scroll-behavior: smooth; /* Thêm scroll-behavior để có hiệu ứng smooth */
+        }
+
+        .gallery a {
+            display: block;
+            max-width: 100%;
+        }
+
+        .gallery img {
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Entry List</h1>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Title</th>
+            <th>Content</th>
+            <th>Created At</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Giả lập dữ liệu cho mục lục -->
+        <tr>
+            <td>Title 1</td>
+            <td>Content for entry 1</td>
+            <td>2023-06-17 10:00:00</td>
+            <td>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1"
+                        aria-expanded="false" aria-controls="collapse1">
+                    View Details
+                </button>
+                <button class="btn btn-success" type="button">Approve</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <div class="collapse" id="collapse1">
+                    <div class="card card-body">
+                        <h5>Journey Information</h5>
+                        <div class="container mt-4">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h2>Thông tin chi tiết về hành trình</h2>
+                                    <hr>
+                                    <!-- Điểm 1 -->
+                                    <div class="card mb-3">
+                                        <div class="card-header">
+                                            <h5>Điểm đến 1 - Ngày đến dự kiến: 25/06/2024</h5>
+                                        </div>
+                                    </div>
+
+                                    <!-- Điểm 2 -->
+                                    <div class="card mb-3">
+                                        <div class="card-header">
+                                            <a href="https://www.google.com/maps/search/?api=1&query=TPHCM+View,+CA+94043"
+                                               target="_blank">
+                                                <h5>
+                                                    Điểm đến 2 - Ngày đến dự kiến: 28/06/2024
+                                                </h5>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Điểm 3 -->
+                                    <div class="card mb-3">
+                                        <div class="card-header">
+                                            <a href="https://www.google.com/maps/search/?api=1&query=TPHCM+View,+CA+94043"
+                                               target="_blank">
+                                                <h5>
+                                                    Điểm đến 3 - Ngày đến dự kiến: 30/06/2024
+                                                </h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <p>Details about the journey for entry 1.</p>
+                        <div class="overflow-auto p-3 mb-3 mb-md-0 mr-md-3 bg-light gallery"
+                             style="max-width: 1000px; max-height: 1500px;" id="gallery1">
+                            <a href="https://th.bing.com/th/id/OIP.cUuD1xJjJQkcjfkbOkrF8QHaE_?w=287&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                               data-lightbox="entry1" data-title="Image 1"><img
+                                    src="https://th.bing.com/th/id/OIP.cUuD1xJjJQkcjfkbOkrF8QHaE_?w=287&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                    alt="Image 1"></a>
+                            <a href="https://via.placeholder.com/800" data-lightbox="entry1" data-title="Image 2"><img
+                                    src="https://via.placeholder.com/150" alt="Image 2"></a>
+                            <a href="https://via.placeholder.com/800" data-lightbox="entry1" data-title="Image 3"><img
+                                    src="https://via.placeholder.com/150" alt="Image 3"></a>
+                            <a href="https://th.bing.com/th/id/OIP.cUuD1xJjJQkcjfkbOkrF8QHaE_?w=287&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                               data-lightbox="entry1" data-title="Image 4"><img
+                                    src="https://th.bing.com/th/id/OIP.cUuD1xJjJQkcjfkbOkrF8QHaE_?w=287&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                    alt="Image 4"></a>
+                            <a href="https://th.bing.com/th/id/OIP.cUuD1xJjJQkcjfkbOkrF8QHaE_?w=287&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                               data-lightbox="entry1" data-title="Image 5"><img
+                                    src="https://th.bing.com/th/id/OIP.cUuD1xJjJQkcjfkbOkrF8QHaE_?w=287&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                    alt="Image 5"></a>
+                            <a href="https://th.bing.com/th/id/OIP.cUuD1xJjJQkcjfkbOkrF8QHaE_?w=287&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                               data-lightbox="entry1" data-title="Image 6"><img
+                                    src="https://th.bing.com/th/id/OIP.cUuD1xJjJQkcjfkbOkrF8QHaE_?w=287&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                    alt="Image 6"></a>
+                            <a href="https://th.bing.com/th/id/OIP.cUuD1xJjJQkcjfkbOkrF8QHaE_?w=287&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                               data-lightbox="entry1" data-title="Image 6"><img
+                                    src="https://th.bing.com/th/id/OIP.cUuD1xJjJQkcjfkbOkrF8QHaE_?w=287&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                    alt="Image 6"></a>
+                        </div>
+                        <div class="text-center mt-3">
+                            <button class="btn btn-primary" onclick="scrollGallery('gallery1', 'left')">Previous
+                            </button>
+                            <button class="btn btn-primary" onclick="scrollGallery('gallery1', 'right')">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Title 2</td>
+            <td>Content for entry 2</td>
+            <td>2023-06-18 11:30:00</td>
+            <td>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2"
+                        aria-expanded="false" aria-controls="collapse2">
+                    View Details
+                </button>
+                <button class="btn btn-success" type="button">Approve</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <div class="collapse" id="collapse2">
+                    <div class="card card-body">
+                        <h5>Journey Information</h5>
+                        <p>Details about the journey for entry 2.</p>
+                        <div class="overflow-auto p-3 mb-3 mb-md-0 mr-md-3 bg-light gallery"
+                             style="max-width: 1000px; max-height: 1500px;" id="gallery2">
+                            <a href="https://th.bing.com/th/id/OIP.cUuD1xJjJQkcjfkbOkrF8QHaE_?w=287&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                               data-lightbox="entry2" data-title="Image 1"><img
+                                    src="https://th.bing.com/th/id/OIP.cUuD1xJjJQkcjfkbOkrF8QHaE_?w=287&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                    alt="Image 1"></a>
+                            <a href="https://via.placeholder.com/800" data-lightbox="entry2" data-title="Image 2"><img
+                                    src="https://via.placeholder.com/150" alt="Image 2"></a>
+                            <a href="https://via.placeholder.com/800" data-lightbox="entry2" data-title="Image 3"><img
+                                    src="https://via.placeholder.com/150" alt="Image 3"></a>
+                            <a href="https://th.bing.com/th/id/OIP.cUuD1xJjJQkcjfkbOkrF8QHaE_?w=287&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                               data-lightbox="entry2" data-title="Image 4"><img
+                                    src="https://th.bing.com/th/id/OIP.cUuD1xJjJQkcjfkbOkrF8QHaE_?w=287&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                    alt="Image 4"></a>
+                            <a href="https://th.bing.com/th/id/OIP.cUuD1xJjJQkcjfkbOkrF8QHaE_?w=287&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                               data-lightbox="entry2" data-title="Image 5"><img
+                                    src="https://th.bing.com/th/id/OIP.cUuD1xJjJQkcjfkbOkrF8QHaE_?w=287&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                    alt="Image 5"></a>
+                            <a href="https://th.bing.com/th/id/OIP.cUuD1xJjJQkcjfkbOkrF8QHaE_?w=287&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                               data-lightbox="entry2" data-title="Image 6"><img
+                                    src="https://th.bing.com/th/id/OIP.cUuD1xJjJQkcjfkbOkrF8QHaE_?w=287&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                    alt="Image 6"></a>
+                            <a href="https://th.bing.com/th/id/OIP.cUuD1xJjJQkcjfkbOkrF8QHaE_?w=287&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                               data-lightbox="entry2" data-title="Image 6"><img
+                                    src="https://th.bing.com/th/id/OIP.cUuD1xJjJQkcjfkbOkrF8QHaE_?w=287&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                    alt="Image 6"></a>
+                            <a href="https://th.bing.com/th/id/OIP.cUuD1xJjJQkcjfkbOkrF8QHaE_?w=287&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                               data-lightbox="entry2" data-title="Image 6"><img
+                                    src="https://th.bing.com/th/id/OIP.cUuD1xJjJQkcjfkbOkrF8QHaE_?w=287&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                    alt="Image 6"></a>
+                            <a href="https://th.bing.com/th/id/OIP.cUuD1xJjJQkcjfkbOkrF8QHaE_?w=287&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                               data-lightbox="entry2" data-title="Image 6"><img
+                                    src="https://th.bing.com/th/id/OIP.cUuD1xJjJQkcjfkbOkrF8QHaE_?w=287&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                    alt="Image 6"></a>
+                            <a href="https://th.bing.com/th/id/OIP.cUuD1xJjJQkcjfkbOkrF8QHaE_?w=287&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                               data-lightbox="entry2" data-title="Image 6"><img
+                                    src="https://th.bing.com/th/id/OIP.cUuD1xJjJQkcjfkbOkrF8QHaE_?w=287&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                    alt="Image 6"></a>
+
+                            <a href="https://th.bing.com/th/id/OIP.cUuD1xJjJQkcjfkbOkrF8QHaE_?w=287&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                               data-lightbox="entry2" data-title="Image 6"><img
+                                    src="https://th.bing.com/th/id/OIP.cUuD1xJjJQkcjfkbOkrF8QHaE_?w=287&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                    alt="Image 6"></a>
+                        </div>
+                        <div class="text-center mt-3">
+                            <button class="btn btn-primary" onclick="scrollGallery('gallery2', 'left')">Previous
+                            </button>
+                            <button class="btn btn-primary" onclick="scrollGallery('gallery2', 'right')">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- jQuery, Popper.js, Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Lightbox JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script>
+    function scrollGallery(galleryId, direction) {
+        const gallery = document.getElementById(galleryId);
+        const scrollDistance = direction === 'left' ? -200 : 200;
+        gallery.scrollBy({
+            left: scrollDistance,
+            behavior: 'smooth'
+        });
+    }
+</script>
+</body>
+</html>

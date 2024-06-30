@@ -1,0 +1,33 @@
+text,label
+This is a normal content.,1
+This content contains sensitive information.,1
+Here is some regular text.,1
+Sensitive data detected in this text.,1
+Just another normal content.,1
+This article includes some sensitive details.,1
+F**k this! This is sh*t!,1
+"Đ*o tin được, thật là v*cl!",1
+Call me at 123-456-7890!,1
+Liên hệ với tôi qua số 098-765-4321!,1
+<p>This is a paragraph.</p>,1
+<script>alert('This is a test');</script>,1
+Content without meaning $$$ %%% @@@,1
+Nội dung không rõ nghĩa ### $$$,1
+The password is '12345'.,1
+Mật khẩu là 'abcdef'.,1
+Do not share your social security number.,1
+Không chia sẻ số chứng minh nhân dân của bạn.,1
+Buy now for $9.99 only!,1
+Mua ngay với giá chỉ 199.000đ!,1
+Vũng Tàu có bãi biển đẹp,0
+Hà Nội đẹp,0
+Đà Lạt mộng mơ,0
+Đà Lạt là thành phố du lịch nổi tiếng của Việt Nam,0
+Đà Lạt mùa này rất đẹp,0
+Đà Lạt có rất nhiều hoa,0
+Hà Nội,0
+sex,1
+mua bán trinh,1
+đẹp lắm nha,0
+Chợ,0
+Đà Lạt,0
