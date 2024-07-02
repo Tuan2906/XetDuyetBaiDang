@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/XetDuyetBaiDang/static/css/main.9bc237c4.css",
+    "main.js": "/XetDuyetBaiDang/static/js/main.2d4473ce.js",
+    "static/js/453.76aca310.chunk.js": "/XetDuyetBaiDang/static/js/453.76aca310.chunk.js",
+    "index.html": "/XetDuyetBaiDang/index.html",
+    "main.9bc237c4.css.map": "/XetDuyetBaiDang/static/css/main.9bc237c4.css.map",
+    "main.2d4473ce.js.map": "/XetDuyetBaiDang/static/js/main.2d4473ce.js.map",
+    "453.76aca310.chunk.js.map": "/XetDuyetBaiDang/static/js/453.76aca310.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9bc237c4.css",
+    "static/js/main.2d4473ce.js"
+  ]
+}
