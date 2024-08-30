@@ -26,7 +26,7 @@ The frontend provides the following features:
 ### Backend
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/post-review-backend.git
+   git clone https://github.com/Tuàn906/post-review-backend.git
    ```
 2. Navigate to the backend directory:
    ```bash
@@ -50,7 +50,7 @@ The frontend provides the following features:
 ### Frontend
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/post-review-frontend.git
+   git clone https://github.com/Tuan2906/XetDuyetBaiDang.git
    ```
 2. Navigate to the frontend directory:
    ```bash
