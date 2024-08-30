@@ -12,7 +12,7 @@ The backend is responsible for the following functionalities:
 - **Send Notification Emails:** Notify users when their posts are reviewed.
 - **Authentication & Authorization:** Login functionality with employee roles and permissions.
 
-**Technology Used:** Python (Django Rest Framework)
+**Technology Used:** Python (Django Rest Framework), scikit-learn, joblib
 
 ## Frontend
 The frontend provides the following features:
