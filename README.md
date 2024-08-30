@@ -54,7 +54,7 @@ The frontend provides the following features:
    ```
 2. Navigate to the frontend directory:
    ```bash
-   cd post-review-frontend
+   cd XetDuyetBaiDang
    ```
 3. Install the required packages:
    ```bash
