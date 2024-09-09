@@ -30,7 +30,7 @@ The frontend provides the following features:
    ```
 2. Navigate to the backend directory:
    ```bash
-   cd post-review-backend
+   cd shareJourneyProject
    ```
 3. Create and activate a virtual environment:
    ```bash
@@ -54,7 +54,7 @@ The frontend provides the following features:
    ```
 2. Navigate to the frontend directory:
    ```bash
-   cd XetDuyetBaiDang
+   cd XetDuyetPost
    ```
 3. Install the required packages:
    ```bash
